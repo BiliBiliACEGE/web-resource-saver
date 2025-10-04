@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="settings">设置</title>
+  <link href="settings.css" rel="stylesheet">
+  <script src="../js/i18n.js"></script>
+</head>
+<body>
+  <header>
+    <span id="close" data-i18n="close">&times;</span>
+    <h3 data-i18n="settings">设置</h3>
+  </header>
+  <section>
+    <h4 data-i18n="appearance">外观</h4>
+    <label class="switch-item">
+      <span data-i18n="dark_mode">深色模式跟随系统</span>
+      <input type="checkbox" id="dark" checked>
+      <div class="slider"></div>
+    </label>
+
+    <h4 data-i18n="download_options">下载</h4>
+    <label class="switch-item">
+      <span data-i18n="folder_structure">按文件结构保存</span>
+      <small data-i18n="folder_structure_desc">自动分到 img/ css/ js/ 等文件夹</small>
+      <input type="checkbox" id="folder" checked>
+      <div class="slider"></div>
+    </label>
+    <label class="switch-item">
+      <span data-i18n="head_request">HEAD 请求补全大小</span>
+      <small data-i18n="head_request_desc">对 0 B 资源尝试 HEAD 获取长度</small>
+      <input type="checkbox" id="head" checked>
+      <div class="slider"></div>
+    </label>
+    <label class="switch-item">
+      <span data-i18n="skip_error">跳过 403/404 资源</span>
+      <small data-i18n="skip_error_desc">下载时自动忽略已失效链接</small>
+      <input type="checkbox" id="skipError" checked>
+      <div class="slider"></div>
+    </label>
+
+    <label class="switch-item">
+      <span data-i18n="language">语言 / Language</span>
+      <select id="language">
+        <option value="zh" data-i18n="lang_zh">中文</option>
+        <option value="en" data-i18n="lang_en">English</option>
+      </select>
+    </label>
+
+    <label class="switch-item">
+      <span data-i18n="include_html">打包时包含主 HTML</span>
+      <small data-i18n="include_html_desc">保存当前页面 DOM 快照</small>
+      <input type="checkbox" id="includeHtml" checked>
+      <div class="slider"></div>
+    </label>
+    <label class="switch-item">
+      <span data-i18n="replace_path">自动替换资源路径</span>
+      <small data-i18n="replace_path_desc">让 index.html 本地可直接打开</small>
+      <input type="checkbox" id="replacePath" checked>
+      <div class="slider"></div>
+    </label>
+    <label class="switch-item">
+      <span data-i18n="keep_query">保留 URL 查询参数</span>
+      <small data-i18n="keep_query_desc">文件名附带 ?v=xxx 等标记</small>
+      <input type="checkbox" id="keepQuery">
+      <div class="slider"></div>
+    </label>
+
+    <label class="switch-item">
+      <span data-i18n="keep_original_path">保留原始路径</span>
+      <small data-i18n="keep_original_path_desc">压缩包内按网页原路径保存，不再强制 img/ css/ 等文件夹</small>
+      <input type="checkbox" id="keepOriginalPath">
+      <div class="slider"></div>
+    </label>
+
+    <h4 data-i18n="configuration">配置</h4>
+    <button id="exportCfg" class="btn-line" data-i18n="export_config">导出配置</button>
+    <button id="importCfg" class="btn-line" data-i18n="import_config">导入配置</button>
+  </section>
+
+  <footer>
+    <button id="reset" data-i18n="reset_defaults">恢复默认</button>
+    <button id="save" class="primary" data-i18n="save_and_close">保存并关闭</button>
+  </footer>
+
+  <script src="settings.js"></script>
+</body>
+</html>

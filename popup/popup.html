@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="extension_name">网页资源下载器</title>
+  <link href="popup.css" rel="stylesheet">
+  <script src="../js/i18n.js"></script>
+</head>
+<body>
+  <header class="glass">
+    <h3 data-i18n="extension_name">网页资源下载器</h3>
+    <img id="openSet" src="../icons/gear.jpg" data-i18n-title="settings">
+  </header>
+  <div style="margin:4px 0 8px;font-size:12px;color:#666">
+    <span data-i18n="filtered">已过滤</span>
+    <span id="resCount">0</span>
+    <span data-i18n="items">条</span>
+  </div>
+  <div class="search-glass">
+    <input id="search" type="text" data-i18n-placeholder="search_placeholder">
+    <span class="clear">&times;</span>
+  </div>
+  <div class="bar">
+    <button id="selAll" data-i18n="select_all"></button>
+    <button id="inv" data-i18n="invert_selection"></button>
+    <button id="copy" data-i18n="copy_links"></button>
+    <button id="down" data-i18n="download"></button>
+    <span id="prog" class="hide">0 / 0</span>
+  </div>
+  <div id="cats"></div>
+  <div id="list"><span data-i18n="loading">加载中…</span></div>
+  <iframe id="setFrame" class="slide" src="../settings/settings.html"></iframe>
+  <script src="../js/jszip.min.js"></script>
+  <script src="../js/FileSaver.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

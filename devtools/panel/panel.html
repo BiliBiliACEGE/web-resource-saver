@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="panel.css">
+  <script src="../../js/i18n.js"></script>
+</head>
+<body>
+  <!-- 搜索框 -->
+   <div class="search-glass">
+    <input id="search" type="text" data-i18n-placeholder="search_placeholder">
+    <span class="clear">&times;</span>
+  </div>
+    <!-- 工具栏 --> 
+  <div class="bar">
+    <button id="selAll" data-i18n="select_all"></button>
+    <button id="inv" data-i18n="invert_selection"></button>
+    <button id="copy" data-i18n="copy_links"></button>
+    <button id="down" data-i18n="download"></button>
+    <span id="status"></span>
+  </div>
+
+  <!-- 分类栏 -->
+  <div id="cats" class="cats"></div>
+
+  <!-- 资源列表 -->
+  <div id="list" class="list-scroll">
+    <span data-i18n="loading">加载中…</span>
+  </div>
+
+  <script src="../../js/jszip.min.js"></script>
+  <script src="../../js/FileSaver.min.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>
