@@ -28,6 +28,16 @@
   - `storage`：保存用户设置与语言偏好。
   - 不收集任何个人数据，不上传任何信息。
 
+
+## 安装
+
+您可以通过以下方式安装此扩展：
+
+- **Microsoft Edge 扩展商店**：
+  访问 [Edge 扩展商店页面](https://microsoftedge.microsoft.com/addons/detail/%E7%BD%91%E9%A1%B5%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E5%99%A8/bljhfflkkljmpffnakllnbkoihnbmcfl) 下载并安装扩展。
+
+> 如果您使用的是其他 Chromium 内核浏览器（如 Chrome），也可以通过加载未打包的扩展程序进行安装。
+
 ## 常见问题
 
 ### Q: 动态渲染的页面能保存吗？
@@ -43,8 +53,10 @@ A: 不会
 
 - **1.0.0**：
   - 首次发布，支持 Manifest V3、多语言、离线 ZIP 重构。
+-  **1.0.1**:
+  -  新增开发人员工具界面入口
 
 ## 联系我们
 
-- 邮箱：support@example.com
+- 邮箱：BiliBiliACEGE-Github@outlook.com
 - GitHub：[github.com/BiliBiliACEGE/web-resource-saver](https://github.com/BiliBiliACEGE/web-resource-saver)
