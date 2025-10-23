@@ -62,4 +62,4 @@ A: 不会
 ## 联系我们
 
 - 邮箱：BiliBiliACEGE-Github@outlook.com
-- GitHub：[github.com/BiliBiliACEGE/web-resource-saver](https://github.com/BiliBiliACEGE/web-resource-saver)
+- GitHub：[github.com/BiliBiliACEGE](https://github.com/BiliBiliACEGE/)
